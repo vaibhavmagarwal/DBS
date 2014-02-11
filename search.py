@@ -8,7 +8,7 @@ import datetime
 #-------------------------------------------------------------------------------------------------------------------------------------------------------------
 # This part is used to connect to the database
 
-conn = sqlite3.connect('C:\Python27(32bit)\ps1\db\MyDb')
+conn = sqlite3.connect('C:\Python27\db\MyDb') # add the path to your database file 
 c = conn.cursor()
 c.execute("CREATE TABLE IF NOT EXISTS Plant(id INTEGER PRIMARY KEY, d date, unit TEXT, machine TEXT, maintenance TEXT, complain TEXT)")
 APP_EXIT = 1

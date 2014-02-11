@@ -13,7 +13,7 @@ from wx.lib.mixins.listctrl import CheckListCtrlMixin, ListCtrlAutoWidthMixin
 #------------------------------------------------------------------------------------------------------------------------------------------------------------
 # This part is used to connect to the database
 
-conn = sqlite3.connect('C:\Python27(32bit)\ps1\db\MyDb')
+conn = sqlite3.connect('C:\Python27\db\MyDb') # add the path to your database file 
 c = conn.cursor()
 currdate = "%s"%(datetime.date.today())
 oldesttime= datetime.date.today()-datetime.timedelta(weeks=260)
